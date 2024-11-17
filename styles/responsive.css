@@ -1,0 +1,597 @@
+/* index html responsive */
+.hero-image img,
+.coffee-image img,
+.social-icon {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Extra Small Devices (Mobile Phones, less than 600px) */
+@media (max-width: 599px) {
+	/* Navigation */
+	.hamburger {
+		display: block;
+	}
+
+	.nav-menu,
+	.nav-right {
+		display: none;
+	}
+	/* Hero Section */
+	.hero {
+		flex-direction: column;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.hero-text {
+		width: 100%;
+	}
+
+	.hero h1 {
+		font-size: 32px;
+	}
+
+	.hero-buttons {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.stats {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	/* Coffee Section */
+	.coffee-item {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.coffee-item-reverse {
+		flex-direction: column;
+	}
+
+	.coffee-content {
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	/* Best Selling Section */
+	.coffee-filters {
+		flex-wrap: wrap;
+		gap: 10px;
+		justify-content: center;
+	}
+
+	.coffee-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+		padding: 20px;
+	}
+
+	/* Newsletter Section */
+	.newsletter-content {
+		flex-direction: column;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.email-signup {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.email-signup input {
+		width: 100%;
+	}
+
+	/* Footer */
+	.footer-container {
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.footer-nav ul {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.social-links {
+		justify-content: center;
+	}
+}
+
+/* Small Devices (Portrait Tablets and Large Mobile Phones, 600px to 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+	.hero {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.coffee-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.stats {
+		justify-content: center;
+	}
+
+	.newsletter-content {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+/* Medium Devices (Landscape Tablets, 768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.hero h1 {
+		font-size: 40px;
+	}
+
+	.coffee-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.coffee-content {
+		padding: 20px;
+	}
+
+	.newsletter-content {
+		padding: 40px;
+	}
+}
+
+/* Large Devices (Laptops and Desktops, 1024px to 1279px) */
+@media (min-width: 1024px) {
+	.coffee-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Products Page Responsive Styles */
+@media (max-width: 599px) {
+	/* Top Categories */
+	.categories-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		padding: 0 1rem;
+	}
+
+	/* Best Delivered Categories */
+	.best-delivered .category-grid,
+	.category-grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+		padding: 0 1rem;
+	}
+
+	.best-delivered .category-card {
+		max-width: 100%;
+	}
+
+	.best-delivered .category-card img,
+	.category-card img {
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.best-delivered h2.product-section-title {
+		font-size: 2rem;
+		padding: 0 1rem;
+	}
+
+	.best-delivered .price-action {
+		padding: 0.5rem;
+	}
+
+	/* Regular Menu */
+	.product-grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 0 1rem;
+	}
+
+	.menu-description {
+		padding: 0 1rem;
+	}
+
+	/* Promotions */
+	.promo-grid {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+	/* Top Categories & Best Delivered */
+	.categories-grid,
+	.category-grid,
+	.best-delivered .category-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	/* Regular Menu */
+	.product-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+
+	/* Promotions */
+	.promo-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	/* Top Categories & Best Delivered */
+	.categories-grid,
+	.category-grid,
+	.best-delivered .category-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+
+	/* Regular Menu */
+	.product-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* Promotions */
+	.promo-grid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+	}
+}
+/* About Page Responsive Styles */
+@media (max-width: 599px) {
+	/* Navigation */
+	.navbar {
+		padding: 10px 20px;
+	}
+
+	.nav-menu {
+		display: none;
+	}
+
+	/* Coffee Partnership Section */
+	.coffee-partnership {
+		padding: 40px 20px;
+	}
+
+	.partnership-showcase {
+		flex-direction: column;
+		gap: 30px;
+		margin-bottom: 40px;
+	}
+
+	.showcase-image {
+		flex: 1;
+		padding: 10px;
+	}
+
+	.showcase-image img {
+		height: 300px;
+	}
+
+	.showcase-description {
+		flex: 1;
+		padding: 20px;
+		margin-top: 0;
+	}
+
+	.showcase-description h2 {
+		font-size: 32px;
+	}
+
+	/* Partners Section */
+	.partners-section {
+		padding: 20px;
+	}
+
+	.partner-logos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	.logo-card {
+		padding: 15px;
+	}
+
+	.logo-card img {
+		max-width: 150px;
+	}
+
+	/* Team Section */
+	.team-section {
+		padding: 40px 20px;
+	}
+
+	.team-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	.member-profile {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.member-image {
+		width: 200px;
+		height: 200px;
+		margin: 0 auto 20px;
+	}
+
+	/* Services Section */
+	.services {
+		padding: 40px 20px;
+	}
+
+	.service-icons {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.service-item {
+		max-width: 100%;
+	}
+
+	.service-item img {
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+	/* Coffee Partnership Section */
+	.coffee-partnership {
+		padding: 60px 40px;
+	}
+
+	.partnership-showcase {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	/* Partners Section */
+	.partner-logos {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+		padding: 0 20px;
+	}
+
+	/* Team Section */
+	.team-grid {
+		grid-template-columns: 1fr;
+		gap: 30px;
+	}
+
+	/* Services Section */
+	.service-icons {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+	/* Coffee Partnership Section */
+	.coffee-partnership {
+		padding: 80px 60px;
+	}
+
+	.partnership-showcase {
+		gap: 40px;
+	}
+
+	/* Partners Section */
+	.partner-logos {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
+
+	/* Team Section */
+	.team-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
+	}
+
+	.member-profile {
+		display: flex;
+		gap: 30px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	/* Services Section */
+	.service-icons {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px;
+	}
+}
+
+/* Contact Page Responsive Styles */
+@media (max-width: 599px) {
+	/* Hero Section */
+	.contact-hero {
+		height: 200px;
+		padding: 20px;
+	}
+
+	.contact-hero h1 {
+		font-size: 2rem;
+	}
+
+	.contact-hero p {
+		font-size: 1rem;
+		padding: 0 1rem;
+	}
+
+	/* Contact Section */
+	.contact-section {
+		padding: 2rem 1rem;
+	}
+
+	.contact-container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	/* Map Container */
+	.map-container {
+		height: 300px;
+		border-width: 4px;
+	}
+
+	/* Form Container */
+	.contact-form-container {
+		padding: 1.5rem;
+	}
+
+	.form-group input,
+	.form-group textarea {
+		padding: 0.8rem 1rem;
+		font-size: 0.9rem;
+	}
+
+	.submit-btn {
+		padding: 0.8rem 1.5rem;
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+	/* Hero Section */
+	.contact-hero {
+		height: 250px;
+	}
+
+	.contact-hero h1 {
+		font-size: 2.8rem;
+	}
+
+	/* Contact Section */
+	.contact-container {
+		grid-template-columns: 1fr;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.map-container {
+		height: 400px;
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+	.contact-container {
+		gap: 2rem;
+		padding: 0 2rem;
+	}
+
+	.contact-form-container {
+		padding: 2rem;
+	}
+}
+
+/* Signup Page Responsive Styles */
+@media (max-width: 599px) {
+	/* Navigation */
+	.navbar {
+		padding: 10px 20px;
+	}
+
+	.nav-menu {
+		display: none;
+	}
+
+	/* Signup Container */
+	.signup-container {
+		grid-template-columns: 1fr;
+		padding: 1rem;
+		gap: 1rem;
+		min-height: auto;
+	}
+
+	/* Form Section */
+	.signup-form-section {
+		padding: 1rem;
+	}
+
+	.signup-form-wrapper {
+		padding: 1rem;
+	}
+
+	.signup-form-wrapper h2 {
+		font-size: 1.8rem;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	/* Google Button */
+	.google-btn {
+		padding: 0.7rem;
+		font-size: 0.9rem;
+	}
+
+	/* Form Groups */
+	.form-group {
+		margin-bottom: 1rem;
+	}
+
+	.form-group input {
+		padding: 0.7rem;
+	}
+
+	/* Terms Checkbox */
+	.terms-checkbox {
+		margin: 1rem 0;
+	}
+
+	.terms-checkbox label {
+		font-size: 0.8rem;
+	}
+
+	/* Signup Button */
+	.signup-btn {
+		padding: 0.7rem;
+	}
+
+	/* Image Section */
+	.signup-image-section {
+		display: none; /* Hide image on mobile */
+	}
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+	.signup-container {
+		grid-template-columns: 1fr;
+		padding: 1.5rem;
+	}
+
+	.signup-form-wrapper {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	.signup-image-section {
+		display: none; /* Hide image on tablet */
+	}
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+	.signup-container {
+		grid-template-columns: 1fr 1fr;
+		padding: 1.5rem;
+	}
+
+	.signup-form-wrapper {
+		padding: 1.5rem;
+	}
+
+	.coffee-image {
+		max-height: 500px;
+	}
+}
