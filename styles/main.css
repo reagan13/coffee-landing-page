@@ -716,18 +716,79 @@ footer {
 }
 
 /* Best Delivered Categories */
+.best-delivered {
+	padding: 4rem 2rem;
+	text-align: center;
+	background-color: #1a0f0f;
+}
+
 .category-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 30px;
-	padding: 20px;
+	gap: 2rem;
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 1rem;
 }
 
 .category-card {
+	background: #2a1f1f;
+	border-radius: 1rem;
+	padding: 2rem;
 	position: relative;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.likes {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	font-size: 0.9rem;
+	color: #333;
+}
+
+.category-card img {
+	width: 100%;
+	max-width: 300px;
+
+	height: auto;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
+
+.category-card h3 {
+	color: white;
+	font-size: 1.5rem;
+	font-family: "Playfair Display", serif;
+	margin: 0;
+}
+
+.price {
+	color: white;
+	font-size: 1.25rem;
+	margin: 0;
+}
+
+.product-order-btn {
+	background: #c17f59;
+	color: white;
+	padding: 0.75rem 2rem;
+	border: none;
+	border-radius: 2rem;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1rem;
+	margin-top: 0.5rem;
+}
+
+.product-order-btn:hover {
+	background: #a66b48;
 }
 
 /* Regular Menu Section */
