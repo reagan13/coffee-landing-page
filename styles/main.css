@@ -18,7 +18,6 @@
 	height: 3px;
 	background-color: white;
 	margin: 5px 0;
-	transition: all 0.3s ease;
 }
 
 body {
@@ -42,6 +41,8 @@ body {
 .logo {
 	font-size: 24px;
 	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
 }
 
 .nav-menu {
@@ -53,11 +54,6 @@ body {
 .nav-menu a {
 	color: white;
 	text-decoration: none;
-}
-
-.nav-menu a:hover,
-.nav-menu .active {
-	color: #c17f59;
 }
 
 .nav-right {
@@ -246,13 +242,6 @@ body {
 	cursor: pointer;
 	color: #666;
 	font-size: 1.2rem;
-	transition: color 0.3s;
-}
-
-.coffee-filters button.active {
-	color: #1a0f0f;
-	border-bottom: 2px solid #1a0f0f;
-	font-size: 1.2rem;
 }
 
 .coffee-grid {
@@ -339,11 +328,6 @@ body {
 	font-size: 18px;
 }
 
-.order-button:hover {
-	background-color: #1a0f0f;
-	color: #f4e6d4;
-}
-
 /* Navigation arrows */
 .slider-nav {
 	display: flex;
@@ -361,11 +345,6 @@ body {
 	width: 50px;
 	font-size: 1.5rem;
 	cursor: pointer;
-	transition: background-color 0.3s;
-}
-
-.slider-nav button:hover {
-	background: #2c1f1f;
 }
 
 /* Newsletter Section */
@@ -430,11 +409,6 @@ body {
 	border: none;
 	cursor: pointer;
 	font-size: 20px;
-	transition: background-color 0.3s;
-}
-
-.email-signup button:hover {
-	background-color: #2c1f1f;
 }
 
 /* Footer */
@@ -500,11 +474,6 @@ body {
 	text-decoration: none;
 	font-weight: 600;
 	margin-bottom: 40px;
-	transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-	background-color: #a66d4b;
 }
 
 .request-info .copyright {
@@ -542,11 +511,6 @@ body {
 	color: white;
 	text-decoration: none;
 	font-size: 16px;
-	transition: color 0.3s ease;
-}
-
-.footer-nav a:hover {
-	color: #c17f59;
 }
 
 .social-links {
@@ -740,10 +704,6 @@ body {
 	color: #666;
 	font-size: 18px;
 	text-decoration: none;
-}
-
-.social-links a:hover {
-	color: #c17f59;
 }
 
 .icon-circle {
@@ -1001,10 +961,6 @@ body {
 	white-space: nowrap;
 }
 
-.product-order-btn:hover {
-	background: #f1c40f;
-}
-
 /* Promotions */
 .promo-grid {
 	display: grid;
@@ -1052,11 +1008,6 @@ body {
 	background-color: #2a1f1f;
 	color: white;
 	padding: 30px;
-	transition: transform 0.3s;
-}
-
-.category-item:hover {
-	transform: translateY(-10px);
 }
 
 .category-item img {
@@ -1105,11 +1056,6 @@ body {
 	color: #c17f59;
 	padding: 40px;
 	border: 2px solid #c17f59;
-	transition: transform 0.3s;
-}
-
-.promo-card:hover {
-	transform: translateY(-10px);
 }
 
 .product-section-title {
@@ -1182,12 +1128,6 @@ body {
 	border: 2px solid white;
 	border-radius: 2rem;
 	display: inline-block;
-	transition: all 0.3s ease;
-}
-
-.view-more:hover {
-	background: white;
-	color: #1a0f0f;
 }
 
 .promotions {
@@ -1338,7 +1278,6 @@ body {
 	border: 2px solid #eee;
 	border-radius: 0.8rem;
 	font-size: 1rem;
-	transition: all 0.3s ease;
 	background: #f8f8f8;
 }
 
@@ -1369,14 +1308,9 @@ body {
 	border-radius: 0.8rem;
 	font-size: 1.1rem;
 	cursor: pointer;
-	transition: all 0.3s ease;
 	margin-top: 1rem;
 	width: 100%;
 	font-weight: 600;
-}
-
-.submit-btn:hover {
-	background: #a66d4b;
 }
 
 /* Signup Page Styles */
@@ -1421,11 +1355,6 @@ body {
 	justify-content: center;
 	gap: 0.8rem;
 	cursor: pointer;
-	transition: background 0.3s ease;
-}
-
-.google-btn:hover {
-	background: #f5f5f5;
 }
 
 .google-btn img {
@@ -1473,7 +1402,6 @@ body {
 	border: 1px solid #ddd;
 	border-radius: 8px;
 	font-size: 0.9rem;
-	transition: border-color 0.3s ease;
 }
 
 .form-group input:focus {
@@ -1502,11 +1430,6 @@ body {
 	border-radius: 8px;
 	font-size: 1rem;
 	cursor: pointer;
-	transition: background 0.3s ease;
-}
-
-.signup-btn:hover {
-	background: #3a1f1d;
 }
 
 .signup-image-section {
@@ -1534,9 +1457,13 @@ body {
 .social-icon {
 	width: 24px;
 	height: 24px;
-	transition: opacity 0.3s ease;
 }
 
-.social-icon:hover {
-	opacity: 0.8;
+.footer-logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+	margin: 0;
+	display: block;
 }
